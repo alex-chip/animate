@@ -1,6 +1,6 @@
 {
-  "name": "css-animate",
-  "version": "0.0.1",
+  "name": "chip-animate",
+  "version": "0.0.12",
   "description": "Libreria css de animaciones",
   "main": "gulpfile.babel.js",
   "scripts": {

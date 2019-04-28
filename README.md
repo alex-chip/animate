@@ -38,7 +38,7 @@ Luego puedes agregar las siguientes clases a los elementos que deseas que se ani
 
 * Instale Animate con el comand ``npm intall --save-dev animate``
 * Importe ``animate/animate`` en su proyecto.
-* Establezca la variable ``animateHelpers: false`` para compilar solo lo necesario.
+* Establezca la variable ``animateHelpers: false`` para compilar solo lo necesario (debe hacerlo antes de importar animate).
 * Los mixins disponibles son:
 
 ```scss
