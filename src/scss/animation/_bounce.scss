@@ -1,0 +1,71 @@
+// Abounce left
+@mixin bounceLeft($time) {
+  animation: bounceLeft $time;
+  @keyframes bounceLeft {
+    0% {
+      transform: translate3d(-100%, 0, 0);
+    }
+    
+    90% {      
+      transform: translate3d(10%, 0, 0);
+    }
+    
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+// Abounce Right
+@mixin bounceRight($time) {
+  animation: bounceRight $time;
+  @keyframes bounceRight {
+    0% {
+      transform: translate3d(100%, 0, 0);
+    }
+    
+    90% {      
+      transform: translate3d(-10%, 0, 0);
+    }
+    
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+// Abounce top
+@mixin bounceTop($time) {
+  animation: bounceTop $time;
+  @keyframes bounceTop {
+    0% {
+      transform: translate3d(0, -100%, 0);
+    }
+    
+    90% {      
+      transform: translate3d(0, 10%, 0);
+    }
+    
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+// Abounce Bottom
+@mixin bounceBottom($time) {
+  animation: bounceBottom $time;
+  @keyframes bounceBottom {
+    0% {
+      transform: translate3d(0, 100%, 0);
+    }
+    
+    90% {      
+      transform: translate3d(0, -10%, 0);
+    }
+    
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}

@@ -1,0 +1,254 @@
+/* line 5, src/scss/animation/_animatehelpers.scss */
+.fadein,
+.fade-in,
+.fadeIn {
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* line 10, src/scss/animation/_animatehelpers.scss */
+.fadeout,
+.fade-out,
+.fadeOut {
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* line 17, src/scss/animation/_animatehelpers.scss */
+.slideleft,
+.slide-left,
+.slideLeft {
+  animation: slideLeft 1s;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+/* line 23, src/scss/animation/_animatehelpers.scss */
+.slideright,
+.slide-right,
+.slideRight {
+  animation: slideRight 1s;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+/* line 29, src/scss/animation/_animatehelpers.scss */
+.slidetop,
+.slide-top,
+.slideTop {
+  animation: slideTop 1s;
+}
+
+@keyframes slideTop {
+  from {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+/* line 35, src/scss/animation/_animatehelpers.scss */
+.slidebottom,
+.slide-bottom,
+.slideBottom {
+  animation: slideBottom 1s;
+}
+
+@keyframes slideBottom {
+  from {
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+/* line 41, src/scss/animation/_animatehelpers.scss */
+.slidedown,
+.slide-down,
+.slideDown {
+  max-height: 0;
+  overflow: hidden;
+  animation: slideDown 1s forwards;
+}
+
+@keyframes slideDown {
+  to {
+    max-height: 500px;
+  }
+}
+
+/* line 47, src/scss/animation/_animatehelpers.scss */
+.slideup,
+.slide-up,
+.slideUp {
+  max-height: 500px;
+  animation: slideUp 1s forwards;
+  overflow: hidden;
+}
+
+@keyframes slideUp {
+  to {
+    max-height: 0;
+  }
+}
+
+/* line 54, src/scss/animation/_animatehelpers.scss */
+.zoomin,
+.zoom-in,
+.zoomIn {
+  animation: zoomIn 1s;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale3d(0, 0, 0);
+  }
+}
+
+/* line 60, src/scss/animation/_animatehelpers.scss */
+.zoomout,
+.zoom-out,
+.zoomOut {
+  animation: zoomOut 1s;
+}
+
+@keyframes zoomOut {
+  to {
+    transform: scale3d(0, 0, 0);
+  }
+}
+
+/* line 67, src/scss/animation/_animatehelpers.scss */
+.bounceleft,
+.bounce-left,
+.bounceLeft {
+  animation: bounceLeft 1s;
+}
+
+@keyframes bounceLeft {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  90% {
+    transform: translate3d(10%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* line 72, src/scss/animation/_animatehelpers.scss */
+.bouncerigt,
+.bounce-right,
+.bounceRight {
+  animation: bounceRight 1s;
+}
+
+@keyframes bounceRight {
+  0% {
+    transform: translate3d(100%, 0, 0);
+  }
+  90% {
+    transform: translate3d(-10%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* line 77, src/scss/animation/_animatehelpers.scss */
+.bouncetop,
+.bounce-top,
+.bounceTop {
+  animation: bounceTop 1s;
+}
+
+@keyframes bounceTop {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  90% {
+    transform: translate3d(0, 10%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* line 82, src/scss/animation/_animatehelpers.scss */
+.bouncebottom,
+.bounce-bottom,
+.bounceBottom {
+  animation: bounceBottom 1s;
+}
+
+@keyframes bounceBottom {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  90% {
+    transform: translate3d(0, -10%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* line 89, src/scss/animation/_animatehelpers.scss */
+.animated-borders {
+  position: relative;
+}
+
+/* line 5, src/scss/animation/_borde_en_boton.scss */
+.animated-borders::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #000;
+  background: transparent;
+  left: 0;
+  top: 0;
+  clip-path: polygon(0 0, 0 0, 0 0, 0 0, 0 0);
+}
+
+/* line 18, src/scss/animation/_borde_en_boton.scss */
+.animated-borders:hover:after {
+  animation: animateBorders 5s forwards;
+}
+
+@keyframes animateBorders {
+  35% {
+    clip-path: polygon(0 0, 100% 0, 100% 1px, 0 1px, 0 1px);
+  }
+  50% {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 1px, 0 1px);
+  }
+  85% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 10% 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+}

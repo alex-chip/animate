@@ -1,0 +1,92 @@
+// Compilacion
+@if $animateHelpers == true {
+
+  // Fade
+  .fadein,
+  .fade-in,
+  .fadeIn {
+    @include fadeIn(1s);
+  }
+  .fadeout,
+  .fade-out,
+  .fadeOut {
+    @include fadeOut(1s);
+  }
+  
+  // Slide
+  .slideleft,
+  .slide-left,
+  .slideLeft {
+    @include slideLeft(1s);
+  }
+  
+  .slideright,
+  .slide-right,
+  .slideRight {
+    @include slideRight(1s);
+  }
+  
+  .slidetop,
+  .slide-top,
+  .slideTop {
+    @include slideTop(1s);
+  }
+  
+  .slidebottom,
+  .slide-bottom,
+  .slideBottom {
+    @include slideBottom(1s);
+  }
+  
+  .slidedown,
+  .slide-down,
+  .slideDown {
+    @include slideDown(1s, 500px);
+  }
+  
+  .slideup,
+  .slide-up,
+  .slideUp {
+    @include slideUp(1s, 500px);
+  }
+  
+  // Zoom
+  .zoomin,
+  .zoom-in,
+  .zoomIn {
+    @include zoomIn(1s);
+  }
+  
+  .zoomout,
+  .zoom-out,
+  .zoomOut {
+    @include zoomOut(1s);
+  }
+  
+  // Bounce
+  .bounceleft,
+  .bounce-left,
+  .bounceLeft {
+    @include bounceLeft(1s);
+  }
+  .bouncerigt,
+  .bounce-right,
+  .bounceRight {
+    @include bounceRight(1s);
+  }
+  .bouncetop,
+  .bounce-top,
+  .bounceTop {
+    @include bounceTop(1s);
+  }
+  .bouncebottom,
+  .bounce-bottom,
+  .bounceBottom {
+    @include bounceBottom(1s);
+  }
+  
+  // Border Animate
+  .animated-borders {
+    @include animatedBorders(5s);
+  }
+}

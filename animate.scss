@@ -1,0 +1,11 @@
+// Define if helpers will be rendered
+$animateHelpers: true !default;
+
+// Animations
+@import "./src/scss/animation/fade";
+@import "./src/scss/animation/slide";
+@import "./src/scss/animation/zoom";
+@import "./src/scss/animation/bounce";
+@import "./src/scss/animation/borde_en_boton";
+@import "./src/scss/animation/examples";
+@import "./src/scss/animation/animatehelpers";
