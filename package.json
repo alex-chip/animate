@@ -1,5 +1,5 @@
 {
-  "name": "library_css_animation",
+  "name": "css-animate",
   "version": "0.0.1",
   "description": "Libreria css de animaciones",
   "main": "gulpfile.babel.js",
